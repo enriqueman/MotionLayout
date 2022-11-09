@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionlayout_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E48181"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_cierre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cierre"
+        tools:layout_editor_absoluteX="91dp" />
+
+    <ImageView
+        android:id="@+id/imageView_Gancho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_cierre"
+        app:srcCompat="@drawable/gancho"
+        tools:layout_editor_absoluteX="298dp" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
